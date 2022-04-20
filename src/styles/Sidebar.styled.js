@@ -45,6 +45,6 @@ export const City = styled.div`
     background-color: #000;
     padding: 0 10px;
     transition: all ease 0.2s;
-    color: deeppink;
+    color: deeppink
   }
 `;
