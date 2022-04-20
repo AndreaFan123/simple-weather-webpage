@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,500&display=swap');
   *,
   *::before,
   *::after {
@@ -18,8 +18,10 @@ export const GlobalStyles = createGlobalStyle`
 
   body {
     font-size: 62.5%;
+    font-family: 'Ubuntu', sans-serif;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    
   }
 
   img, picture, video, canvas, svg {
