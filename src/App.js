@@ -1,7 +1,7 @@
 // Components
 import Navbar from './components/Navbar';
 import WeatherContent from './components/WeatherDetails';
-import SideBarNav from './components/Sidebar';
+import BurgerMenu from './components/Burger';
 
 
 
@@ -9,10 +9,19 @@ import SideBarNav from './components/Sidebar';
 import { GlobalStyles } from "./styles/GlobalStyle";
 import { Wrapper } from './styles/Wrapper.styled';
 import { Filter } from './styles/Filter.styled';
-// import { AppStyle } from './styles/App.styled';
+import SideBar from './components/Sidebar';
+
+
+// Import useState
+import { useState } from 'react';
 
 
 function App() {
+
+  const [open, setOpen] = useState(false);
+
+
+
   return (
     <Wrapper>
       <GlobalStyles />
@@ -20,7 +29,8 @@ function App() {
         <Navbar />
         <WeatherContent />
       </Filter>
-      <SideBarNav />
+      <BurgerMenu open={open} setOpen={setOpen} />
+      <SideBar open={open} setOpen={setOpen} />
     </Wrapper>
   );
 }

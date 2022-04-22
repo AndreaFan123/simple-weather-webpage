@@ -19,9 +19,7 @@ export default function WeatherContent() {
       </FlexStyle>
       <FlexStyle>
         <WiHail size={3.5 + "rem"} />
-        <p>
-          <span>30 %</span> chance of rain
-        </p>
+        <p>30 %</p>
       </FlexStyle>
     </WeatherStyles>
   );

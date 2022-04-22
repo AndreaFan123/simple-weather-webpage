@@ -1,62 +1,41 @@
-import {
-  SidebarWrapper,
-  SideMenu,
-  Location,
-  City,
-} from "../styles/Sidebar.styled";
+import { SideBarNav } from "../styles/SidebarNav.styled";
 
-export default function SideBarNav() {
+export default function SideBar({ open }) {
   return (
-    <SidebarWrapper>
-      <SideMenu>
-        <SideMenu>
-          <Location>
-            <p>North TW</p>
-            <City>
-              <a href="#">Taipei</a>
-              <a href="#">New Taipei City</a>
-              <a href="#"></a>
-              <a href="#">Hsinchu</a>
-              <a href="#">Taoyuan</a>
-            </City>
-          </Location>
-          <Location>
-            <p>Central TW</p>
-            <City>
-              <a href="#">Taichung</a>
-              <a href="#">Miaoli</a>
-              <a href="#">Changhua</a>
-              <a href="#">Nantou</a>
-              <a href="#">Yunlin</a>
-            </City>
-          </Location>
-          <Location>
-            <p>South TW</p>
-            <City>
-              <a href="#">Chiayi</a>
-              <a href="#">Kaohsiung</a>
-              <a href="#">Tainan</a>
-              <a href="#">Pingtung</a>
-            </City>
-          </Location>
-          <Location>
-            <p>East TW</p>
-            <City>
-              <a href="#">Yilan</a>
-              <a href="#">Hualien</a>
-              <a href="#">Taitung</a>
-            </City>
-          </Location>
-          <Location>
-            <p>Archipelago</p>
-            <City>
-              <a href="#">Hōko</a>
-              <a href="#">Kinmen</a>
-              <a href="#">Lienchiang</a>
-            </City>
-          </Location>
-        </SideMenu>
-      </SideMenu>
-    </SidebarWrapper>
+    <SideBarNav open={open}>
+      <div>
+        <h2>North TW</h2>
+        <a href="#">Taipei</a>
+        <a href="#">New Taipei City</a>
+        <a href="#">Taoyuan</a>
+        <a href="#">Hsinchu</a>
+        <a href="#">Miaoli</a>
+      </div>
+      <div>
+        <h2>Central TW</h2>
+        <a href="#">Taichung</a>
+        <a href="#">Yunlin</a>
+        <a href="#">Nantou</a>
+        <a href="#">Changhua</a>
+      </div>
+      <div>
+        <h2>South TW</h2>
+        <a href="#">Chiayi</a>
+        <a href="#">Tainan</a>
+        <a href="#">Pingtung</a>
+      </div>
+      <div>
+        <h2>East TW</h2>
+        <a href="#">Yilan</a>
+        <a href="#">Hualien</a>
+        <a href="#">Taitung</a>
+      </div>
+      <div>
+        <h2>Iland</h2>
+        <a href="#">Kinmen</a>
+        <a href="#">Penhu</a>
+        <a href="#">Lienchiang</a>
+      </div>
+    </SideBarNav>
   );
 }
